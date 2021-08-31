@@ -14,3 +14,8 @@
 'Tue, 31 Aug 2021 08:00:44 +0200': Query :'INSERT INTO swa_dharm_table (id, phone, name, city, state,country,is_attend,is_help,is_volunteer,time_duration, dob , date_added) VALUES ('2021083108004363540',8130935017,'Ankush Katharia', 'Bengaluru', 'Karnataka','India','','','','', '', now())' <br> Response: {"error":{"code":400,"message":"Already Exist"}}
 'Tue, 31 Aug 2021 08:06:45 +0200': Query :'select * from swa_dharm_table order by date_added desc' <br> Response: Succesfully Fetch
 'Tue, 31 Aug 2021 08:07:27 +0200': Query :'select * from swa_dharm_table order by date_added desc' <br> Response: Succesfully Fetch
+'Tue, 31 Aug 2021 08:32:02 +0200': Query :'select * from swa_dharm_table order by date_added desc' <br> Response: Succesfully Fetch
+'Mon, 30 Aug 2021 20:14:30 +0200': Query :'select * from swa_dharm_table order by date_added desc' <br> Response: Succesfully Fetch
+'Mon, 30 Aug 2021 20:14:47 +0200': Query :'select * from swa_dharm_table order by date_added desc' <br> Response: Succesfully Fetch
+'Mon, 30 Aug 2021 20:14:56 +0200': Query :'select * from swa_dharm_table order by date_added desc' <br> Response: Succesfully Fetch
+'Mon, 30 Aug 2021 20:17:19 +0200': Query :'select * from swa_dharm_table order by date_added desc' <br> Response: Succesfully Fetch
