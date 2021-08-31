@@ -21,7 +21,7 @@ $message = "'$currentTime': Query :'$query' <br> Response: Succesfully Fetch";
 }
 else{
 $id = date("YmdHis").rand(11111,99999);
-$query = "INSERT INTO swa_dharm_table (id, phone, name, city, state,country,is_attend,is_help,is_volunteer,time_duration, dob , date_added) VALUES ('".$id."',".$number.",'".$name."', '".$city."', '".$state."','".$country."','".$isworkshop."','".$otherhelp."','".$volunteer."','".$duration."', '".$dob."', now())";
+$query = "INSERT INTO swa_dharm_table (id, phone, name, city, state,country,is_attend,is_help,is_volunteer,time_duration, age , date_added) VALUES ('".$id."',".$number.",'".$name."', '".$city."', '".$state."','".$country."','".$isworkshop."','".$otherhelp."','".$volunteer."','".$duration."', '.$age.', now())";
 $result=$conn->query($query);
 if ($result)
     {
