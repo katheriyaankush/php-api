@@ -16,7 +16,8 @@ else {
 $data ='{  "error": {    "code": 400,     "message": "Email and Password Wrong" }}';
 $data =$data;
 }
-
+$currentTime = date(DATE_RSS);
+$message = "'$currentTime': Query :'$query' <br> Response: Succesfully Fetch";
 }
 else{
 $id = date("YmdHis").rand(11111,99999);
@@ -33,9 +34,16 @@ if ($result)
     $data ='{  "error": {    "code": 400,     "message": "Already Exist" }}';
         $data = json_decode($data);
     }
+
+    $currentTime = date(DATE_RSS);
+    $message = "'$currentTime': Query :'$query' <br> Response: " . json_encode($data);
+
 }
 
 echo json_encode($data);
 
+$logfile = 'logfile.log';
+error_log($message."\n", 3, $logfile);
+//readfile($logfile);
 
 ?>
